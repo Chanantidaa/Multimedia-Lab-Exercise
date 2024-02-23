@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            body {
+                height: 100vh;
+                width: 100vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .card {
+                border: 2px solid #bb5588;
+                border-radius: 15px;
+                padding: 90px;
+                background-color: #fc9;
+            }
+            h1 {
+                color: #bb5588;
+            }
+            label {
+                color: #bb5588;
+            }
+            input {
+                background-color: #fc9;
+                border: 2px solid #bb5588;
+                border-radius: 7px;
+            }
+            .button {
+                background-color: white;
+                color: black;
+                border: 2px solid #008cba;
+                padding: 8px 16px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+                margin-top: 10px;
+            }
+            .button:hover {
+                background-color: #008cba;
+                color: white;
+            }
+            .input-group:nth-child(2){
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="card">
+            <div class="card-header">
+                <h1>my card</h1>
+            </div>
+            <div class="card-body">
+                <div class="input-group">
+                    <label>First name:</label>
+                    <input type="text" />
+                </div>
+                
+                <div class="input-group">
+                    <label>Last name:</label>
+                    <input type="text" />
+                </div>
+                    <button class="button">click</button>
+            </div>
+        </div>
+    </body>
+</html>

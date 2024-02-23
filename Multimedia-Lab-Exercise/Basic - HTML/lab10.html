@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab 10 - 06036013 Web and Multimedia Technology</title>
+    </head>
+    <body>
+        <h1 style="font-family: Noto Sans Thai UI, IBM Plex Sans, Sukhumvit Set, Leelawadee">
+            Depression
+        </h1>
+
+        <p style="font-family: Leelawadee, -apple- system, Garuda, sans-serif">
+            Depression (major depressive disorder) is a common and serious medical illness that
+            negatively affects how you feel, the way you think and how you act. Fortunately, it is
+            also treatable. Depression causes feelings of sadness and/or a loss of interest in
+            activities you once enjoyed. It can lead to a variety of emotional and physical problems
+            and can decrease your ability to function at work and at home.
+        </p>
+        <div>
+            <iframe
+                style="display:inline-block;"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/lZ9x5XvcUCU"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+            ></iframe>
+            <img  style="display:inline-block;" src="https://img.freepik.com/premium-vector/what-when-you-are-depressed-infographics-healthcare-infographics-about-depression-woman-vector-illustration_106796-863.jpg?" alt="" width="560"
+            height="315">
+        </div>
+
+        
+        
+        <p>Source: <a href="https://psychiatry.org/">psychiatry.org</a></p>
+
+        <h2>Depression form</h2>
+        <p>
+            Over the last 2 weeks, how often have you been bothered by any of the following
+            problems? Please note, all fields are required.
+        </p>
+
+        <form id="depression_test" action="">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div>
+                    <label for="dob">Date of birth</label>
+                    <input type="date" name="dob_input" id="dob" />
+                </div>
+                <div>
+                    <label for="male_radio">Gender: </label><br />
+                    <input type="radio" name="gender_input" id="male_radio" value="male" />
+                    <label for="male_radio">male</label><br />
+                    <input type="radio" name="gender_input" id="female_radio" value="female" />
+                    <label for="female_radio">female</label><br />
+                    <input
+                        type="radio"
+                        name="gender_input"
+                        id="notspecify_radio"
+                        value="notspecify"
+                    />
+                    <label for="notspecify_radio">notspecify</label><br />
+                </div>
+
+                <div>
+                    <label for="phone_number">Phone number:</label>
+                    <input
+                        type="tel"
+                        name="phone_number"
+                        id="phone_number"
+                        placeholder="012-345-6789"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    /><br />
+
+                    <label for="email_address">Email:</label>
+                    <input type="email" name="email_input" id="email_address" /><br />
+
+                    <label for="address">Address: </label>
+                    <textarea name="address_input" id="address" cols="30" rows="10"></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Screening questions</legend>
+                <ol>
+                    <li id="q1">
+                        <label for="q1">Little interest or pleasure in doing things</label><br />
+                        <input type="radio" name="q1_answer_input" id="q1_ans1" value="0" />
+                        <label for="q1_ans1">Not At All</label><br />
+                        <input type="radio" name="q1_answer_input" id="q1_ans2" value="1" />
+                        <label for="q1_ans2">Several days</label><br />
+                        <input type="radio" name="q1_answer_input" id="q1_ans3" value="2" />
+
+                        <label for="q1_ans3">More than half of the days</label><br />
+                        <input type="radio" name="q1_answer_input" id="q1_ans4" vaLlue="3" />
+                        <label for="q1_ans4">Nearly every day</label><br />
+                    </li>
+
+                    <li id="q2">
+                        <label for="q2">Feeling down, depressed, or hopeless</label><br />
+                        <input type="radio" name="q2_answer_input" id="q2_ans1" value="0" />
+                        <label for="q2_ans1">Not At All</label><br />
+                        <input type="radio" name="q2_answer_input" id="q2_ans2" value="1" />
+                        <label for="q2_ans2">Several days</label><br />
+                        <input type="radio" name="q2_answer_input" id="q2_ans3" value="2" />
+
+                        <label for="q2_ans3">More than half of the days</label><br />
+                        <input type="radio" name="q2_answer_input" id="q2_ans4" vaLlue="3" />
+                        <label for="q2_ans4">Nearly every day</label><br />
+                    </li>
+
+                    <li id="q3">
+                        <label for="q3"
+                            >Trouble falling or staying asleep, or sleeping too much</label
+                        ><br />
+                        <input type="radio" name="q3_answer_input" id="q3_ans1" value="0" />
+                        <label for="q3_ans1">Not At All</label><br />
+                        <input type="radio" name="q3_answer_input" id="q3_ans2" value="1" />
+                        <label for="q3_ans2">Several days</label><br />
+                        <input type="radio" name="q3_answer_input" id="q3_ans3" value="2" />
+                        <label for="q3_ans3">More than half of the days</label><br />
+                        <input type="radio" name="q3_answer_input" id="q3_ans4" vaLlue="3" />
+                        <label for="q3_ans4">Nearly every day</label><br />
+                    </li>
+
+                    <li id="q4">
+                        <label for="q4">Feeling tired or having little energy</label>
+                        <select name="q4_choices" id="q4_answer_choices">
+                            <option value="0">Not At All</option>
+                            <option value="1">Several days</option>
+                            <option value="2">More than half of the days</option>
+                            <option value="3">Nearly every day</option>
+                        </select>
+                    </li>
+
+                    <li id="q5">
+                        <label for="q5">Poor appetite or overeating</label>
+                        <select name="q5_choices" id="q5_answer_choices">
+                            <option value="0">Not At All</option>
+                            <option value="1">Several days</option>
+                            <option value="2">More than half of the days</option>
+                            <option value="3">Nearly every day</option>
+                        </select>
+                    </li>
+
+                    <li id="q6">
+                        <label for="q6"
+                            >Feeling bad about yourself - or that you are a failure or have let
+                            yourself or your family down</label
+                        >
+                        <select name="q6_choices" id="q6_answer_choices">
+                            <option value="0">Not At All</option>
+                            <option value="1">Several days</option>
+                            <option value="2">More than half of the days</option>
+                            <option value="3">Nearly every day</option>
+                        </select>
+                    </li>
+
+                    
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td>Not At All</td>
+                            <td>Several days</td>
+                            <td>More than half of the days</td>
+                            <td>Nearly every day</td>
+                        </tr>
+                    
+                        <tr>
+                            <td style="text-align: left"><li id="q7">Trouble concentrating on things, such as reading the newspaper or watching television</td></li>
+                            <td><input type="radio" name="q7_answer_input" id="q7_ans2" value="0" /></td>
+                            <td><input type="radio" name="q7_answer_input" id="q7_ans2" value="1" /></td>
+                            <td><input type="radio" name="q7_answer_input" id="q7_ans2" value="2" /></td>
+                            <td><input type="radio" name="q7_answer_input" id="q7_ans2" value="3" /></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left"><li id="q8">Moving or speaking so slowly that other people could have noticed
+                                Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual</td></li>
+                            <td><input type="radio" name="q8_answer_input" id="q8_ans2" value="0" /></td>
+                            <td><input type="radio" name="q8_answer_input" id="q8_ans2" value="1" /></td>
+                            <td><input type="radio" name="q8_answer_input" id="q8_ans2" value="2" /></td>
+                            <td><input type="radio" name="q8_answer_input" id="q8_ans2" value="3" /></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left"><li id="q9">Thoughts that you would be better off dead, or of hurting yourself</td></li>
+                            <td><input type="radio" name="q9_answer_input" id="q9_ans2" value="0" /></td>
+                            <td><input type="radio" name="q9_answer_input" id="q9_ans2" value="1" /></td>
+                            <td><input type="radio" name="q9_answer_input" id="q9_ans2" value="2" /></td>
+                            <td><input type="radio" name="q9_answer_input" id="q9_ans2" value="3" /></td>
+                        </tr>
+                    </table>
+
+                
+                    <li id="q10">
+                        <label for="q10">
+                            If you checked off any problems, how difficult have these problems made
+                            it for you at work, home, or with other people?</label
+                        ><br />
+                        <input type="radio" name="q10_answer_input" id="q10_ans1" value="0" />
+                        <label for="q10_ans1">Not At All</label><br />
+                        <input type="radio" name="q10_answer_input" id="q10_ans2" value="1" />
+                        <label for="q10_ans2">Several days</label><br />
+                        <input type="radio" name="q10_answer_input" id="q10_ans3" value="2" />
+                        <label for="q10_ans3">More than half of the days</label><br />
+                        <input type="radio" name="q10_answer_input" id="q10_ans4" vaLlue="3" />
+                        <label for="q10_ans4">Nearly every day</label><br />
+                        </li>
+                </ol>
+            </fieldset>
+            <input type="submit" value="Submit answers" />
+            <input type="reset" value="Reset" />
+        </form>
+    </body>
+</html>

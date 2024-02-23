@@ -1,0 +1,67 @@
+body {
+    font-family : Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    border:2px solid #73AD21;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.headerElements{
+    border: 2px solid #73AD21;
+    display: flex;
+}
+
+.logo {
+    max-height: 6vw;
+    border: 2px solid #73AD21;
+    margin: 0 5px;
+}
+
+.pageTitle {
+    font-size: 4vw;
+    font-weight: bold;
+    border-left: 3px solid black;
+    margin: 0 5px;
+    padding: 5px 0px 5px 5px;
+}
+
+h1, h2, h4{
+    color: #2357a5;
+}
+
+h2 + ul {
+    list-style-type: square;
+}
+
+p>i {
+    color: #2357a5;
+}
+
+a:link {
+    color: #2357a5;
+}
+
+a:visited {
+    color: lightslategray;
+}
+
+rd.content-left{
+    text-align: left;
+}
+
+#study-plan tr:nth-child(2n){
+    background-color: rgba(35, 87, 165, 0.2);
+}
+
+#study-plan tr:last-child{
+    background-color: white;
+    font-weight: bold;
+}
+
+
+
+
+

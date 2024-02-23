@@ -1,0 +1,139 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #251b37;
+}
+
+.container {
+    position: relative;
+}
+
+.container:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.25;
+    background-size: 30%;
+    background-image: url("./img/css3-logo-png-transparent.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -999;
+}
+
+h1,
+h2,
+h3 {
+    color: #372948;
+}
+h1 {
+    text-align: center;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+.background-examples {
+    width: 30%;
+    height: 200px;
+    margin: auto;
+    border: 2px solid #251b37;
+    display: inline-block;
+}
+.bg-color {
+    background-color: #ffecef;
+    border-style: dotted dashed solid none;
+}
+.bg-image {
+    background-image: url(./img/owl-bg-small.png);
+    background-repeat: repeat-x;
+    border-radius: 20px;
+}
+.bg-position {
+    background-image: url(./img/owl-bg-small.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.avatar-img {
+    width: 10%;
+    height: 10%;
+    float: left;
+}
+
+.avatar-img ~ p {
+    float: right;
+    width: 90%;
+}
+
+#links-header {
+    clear: both;
+}
+a:visited {
+    color: #ffecef;
+}
+a:link {
+    color: #00abb3;
+}
+a:hover {
+    color: #372948;
+    text-transform: uppercase;
+    font-size: x-large;
+}
+.objects {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    background-color: #372948;
+    border-radius: 20px;
+    padding: 40px 0px;
+    color: #ffecef;
+    text-align: center;
+}
+#obj-translate {
+    position: relative;
+    left: 0px;
+    animation: translate 10s infinite;
+}
+
+@keyframes translate{
+    0%   {top: 0px; left: 0px;}
+    50%  {top: 0px; left: 100%;}
+    100% {top: 0px; left: 0px;}
+}
+
+#obj-rotate {
+    animation: rotate 3s infinite;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+#obj-translate-rotate {
+    animation: translate-rotate 10s infinite alternate; 
+    left: 0px;
+    position: relative;
+}
+@keyframes translate-rotate {
+    0% {
+        transform: rotate(90deg);
+        left: 0%;
+    }
+    50% {
+        transform: rotate(180deg);
+        left: 50%;
+    }
+    75% {
+        animation-delay: 10s;
+    }
+    100% {
+        transform: rotate(360deg);
+        left: 100%;
+    }
+
+}
